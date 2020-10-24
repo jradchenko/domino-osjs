@@ -1,0 +1,17 @@
+{
+  "type": "application",
+  "name": "VSCode",
+  "category": "development",
+  "server": "server.js",
+  "singleton": true,
+  "title": {
+    "en_EN": "VSCode"
+  },
+  "description": {
+    "en_EN": "VSCode"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}

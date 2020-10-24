@@ -1,0 +1,42 @@
+{
+  "name": "Jupyter",
+  "scripts": {
+    "test": "npm run eslint && npm run stylelint",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "eslint": "eslint index.js server.js",
+    "stylelint": "stylelint index.scss",
+    "prepublishOnly": "npm run test && rm ./dist/* && npm run build"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  },
+  "devDependencies": {
+    "@osjs/dev-meta": "^1.0.2",
+    "http-proxy-middleware": "^1.0.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@osjs/stylelint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "osjs": {
+    "type": "package"
+  }
+}

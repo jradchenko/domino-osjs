@@ -1,0 +1,5 @@
+#!/bin/bash
+
+PORT=${1:-8888}
+
+/opt/code-server/code-server ${DOMINO_WORKING_DIR} --user-data-dir ${DOMINO_WORKING_DIR}/vscode-settings --auth none --bind-addr 0.0.0.0:${PORT} --extensions-dir ${HOME}/.local/share/code-server/extensions --disable-telemetry

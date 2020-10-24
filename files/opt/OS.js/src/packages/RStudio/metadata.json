@@ -1,0 +1,17 @@
+{
+  "type": "application",
+  "name": "RStudio",
+  "category": "development",
+  "server": "server.js",
+  "singleton": true,
+  "title": {
+    "en_EN": "RStudio"
+  },
+  "description": {
+    "en_EN": "RStudio"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}

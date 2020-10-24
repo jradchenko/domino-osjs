@@ -1,0 +1,17 @@
+{
+  "type": "application",
+  "name": "Jupyter",
+  "category": "development",
+  "server": "server.js",
+  "singleton": true,
+  "title": {
+    "en_EN": "Jupyter"
+  },
+  "description": {
+    "en_EN": "Jupyter"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}
