@@ -22,7 +22,7 @@ c.NotebookApp.disable_check_xsrf = True
 EOF
 
 # Replace * in "--ip=*" with the actual IP address of the container
-COMMAND="/opt/conda/bin/jupyter notebook --no-browser --port=$PORT --ip=0.0.0.0 2>&1"
+COMMAND="/opt/conda/bin/jupyter notebook --no-browser --allow-root --port=$PORT --ip=0.0.0.0 2>&1"
 FINAL_COMMAND=$(echo "${COMMAND}" | sed "s/--ip=\\*/--ip=${IP_ADDR}/")
 
 
